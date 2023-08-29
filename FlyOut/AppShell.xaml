@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+	x:Class="FlyOut.AppShell"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:views="clr-namespace:FlyOut.Views"
+    FlowDirection="RightToLeft"
+	xmlns:local="clr-namespace:FlyOut">
+
+
+    <FlyoutItem Title="Cats"
+                Icon="cat.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Dogs"
+                Icon="dog.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+
+   
+</Shell>
